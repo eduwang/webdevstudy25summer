@@ -9,6 +9,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         basicChatbot: resolve(__dirname, 'basicChatbot.html'),
+        basicInputs: resolve(__dirname, 'basicInputs.html'),
       },
     },
   },
