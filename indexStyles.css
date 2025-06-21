@@ -28,3 +28,22 @@ button {
 button:hover {
   background-color: #415a77;
 }
+
+.secondary-button {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #0d1b2a;
+  color: #e0e1dd;
+  border: 2px solid #415a77;
+  padding: 14px 32px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;   /* 🔹 밑줄 제거 */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.secondary-button:hover {
+  background-color: #1b263b;
+  transform: scale(1.05);
+}
