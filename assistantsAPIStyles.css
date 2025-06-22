@@ -1,0 +1,135 @@
+/* assistantsAPIStyles.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0d1b2a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #e0e1dd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.rag-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 40px;
+  background-color: #1b263b;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 1200px;
+}
+
+.rag-input,
+.rag-output {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.rag-input h3,
+.rag-output h4 {
+  margin-bottom: 15px;
+  color: #e0e1dd;
+}
+
+textarea {
+  background-color: #0d1b2a;
+  color: #e0e1dd;
+  border: 1px solid #415a77;
+  border-radius: 10px;
+  padding: 15px;
+  resize: vertical;
+  font-size: 1rem;
+  min-height: 80%;
+  margin-bottom: 15px;
+  font-family: inherit;
+}
+
+button {
+  background-color: #415a77;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+button:hover {
+  background-color: #274c77;
+}
+
+.rag-section {
+  margin-bottom: 30px;
+}
+
+.output-box {
+  background-color: #0d1b2a;
+  border: 1px solid #415a77;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 10px;
+  min-height: 80px;
+  white-space: pre-wrap;
+  overflow-y: auto;
+}
+
+/* assistantsAPIStyles.css – 마지막에 덧붙이기 */
+
+/* textarea·button 수평 정렬 */
+.input-group {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;     /* 버튼이 textarea 상단에 맞붙도록 */
+}
+
+/* 그룹 안에서는 textarea가 남은 공간을 다 차지 */
+.input-group textarea {
+  flex: 1;
+  min-height: 120px;           /* 필요에 따라 높이 조정 */
+}
+
+/* 버튼은 내용이 길어도 한 줄로 보이도록 */
+.input-group button {
+  white-space: nowrap;
+  height: fit-content;         /* 세로로 너무 길어지지 않게 */
+  padding: 12px 18px;
+}
+
+
+/* 각 브라우저별 placeholder 스타일 지정 */
+textarea::placeholder {
+  color: #ffffff; /* 또는 #f5f5f5, 더 진한 흰색 */
+  opacity: 1;     /* 기본 opacity가 낮게 설정됨 → 진하게 보이도록 설정 */
+}
+
+/* WebKit (Chrome, Safari) */
+textarea::-webkit-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+/* Firefox */
+textarea::-moz-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+/* Internet Explorer 10+ */
+textarea:-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+/* Edge */
+textarea::-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
